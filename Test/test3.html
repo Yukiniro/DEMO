@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .main {
+            width : 500px;
+            padding-left : 50px
+        }
+
+        p {
+            font-weight : bold;
+            margin : 0;
+        }
+
+        .progress {
+            height : 20px;
+            box-shadow : 1px 1px 0 #bbb inset;
+            border-radius : 2px;
+        }
+
+        .item {
+            margin : 20px 0;
+        }
+
+        .progress div {
+            transition : width 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item">
+            <p>html</p>
+            <div class="progress">
+                <div id="html" class="progress-bar progress-bar-info" role="progressbar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>javascript</p>
+            <div class="progress">
+                <div id="javascript" class="progress-bar progress-bar-info" role="progressbar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>css</p>
+            <div class="progress">
+                <div id="css" class="progress-bar progress-bar-info" role="progressbar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>bootstrap</p>
+            <div class="progress">
+                <div id="bootstrap" class="progress-bar progress-bar-info" role="progressbar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>jqurey</p>
+            <div class="progress">
+                <div id="jqurey" class="progress-bar progress-bar-info" role="progressbar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/test3.js"></script>
+</body>
+</html>
