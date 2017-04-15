@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearFix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.container {
+     width: 100%;
+    /* background: url("../images/manner.png") top no-repeat scroll;
+     background-size: 100% auto;*/
+     overflow: hidden;
+ }
+
+.innerContainer {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+
+/*头部样式*/
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0,0,0,0.2);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.header .logo {
+    float: left;
+    color: #fff;
+    height: 100%;
+    padding-right: 104px;
+}
+
+.header .logo p {
+    font: 30px "Scriptina";
+    line-height: 70px;
+}
+
+.header .nav li {
+    float: left;
+    font:  14px "Alegreya";
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.header .nav li a {
+    color: #ffffff;
+}
+
+.header .nav span {
+    padding: 0 40px;
+}
+
+.header .links li {
+    float: right;
+    padding-left: 30px;
+    line-height: 70px;
+}
+
+/*manner*/
+.manner {
+    padding-top: 290px;
+    position: relative;
+    z-index: 0;
+    height: 900px;
+    width: 100%;
+    background: url("../images/manner.png") top center /cover no-repeat;
+}
+
+.manner .mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -500px;
+    margin-left: -800px;
+    z-index: 1;
+}
+
+.manner p {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.manner .title {
+    font: 92px "Playfair Display";
+    font-weight: bold;
+    word-spacing: 28px;
+    letter-spacing: 4px;
+}
+
+.manner .dashLine {
+    display: block;
+    margin: 0 auto;
+    padding: 54px 0 60px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.manner .text {
+    font: 24px "Proxima Nova";
+    line-height: 36px;
+}
+
+.manner button {
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    border: 1px dashed #9e9c93;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+
+.manner button {
+    font: 14px "Alegreya";
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+}
+
+/*section1*/
+.section1 {
+    position: relative;
+    background-color: #fefdfc;
+    height: 760px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 10px #ffffff;
+}
+
+.section1 .listLogo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -53px;
+    margin-top: -49px;
+}
+
+.section1 .left {
+    float: left;
+    padding-top: 90px;
+    width: 50%;
+}
+
+.section1 .left p,.cookerMenu {
+    text-align: center;
+}
+
+.section1 .left .title {
+    font: 48px "Alegreya";
+    color: #56534c;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.section1 .left .footNote {
+    font: 14px "Alegreya";
+    color: #a47d5e;
+    line-height: 14px;
+    padding: 18px 0 66px 0;
+    text-transform: uppercase;
+}
+
+.section1 .left .text {
+    font:  14px "Proxima Nova";
+    line-height: 24px;
+    color: #56534c;
+}
+
+.section1 .left .cookTitle {
+    font: 24px "Alegreya";
+    font-weight: bold;
+    color: #56534c;
+    padding: 44px 0 42px 0;
+}
+
+.section1 .left .cookerMenu {
+    height: 100px;
+    width: 100%;
+}
+
+.section1 .left .cookerMenu p {
+    box-sizing: border-box;
+    height: 60px;
+    width: 111px;
+    border-top: 1px solid #d7d5ca;
+    border-bottom: 1px solid #d7d5ca;
+    font: 24px "Alegreya";
+    line-height: 60px;
+    color: #56534c;
+}
+
+.section1 .left .firstName {
+    float: left;
+    margin-left: 130px;
+}
+
+.section1 .left .lastName {
+    float: right;
+    margin-right: 130px;
+}
+
+.section1 .left .cookerMenu #cooker {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    border: 5px solid #ffffff;
+    background: url("../images/cooker.png") 25% 5% no-repeat;
+    margin-top: -20px;
+}
+
+.section1 .left .quote {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.section1 .left .quote p {
+    font: 24px Scriptina;
+    line-height: 30px;
+    color: #a47d5e;
+}
+
+.section1 .left .quote span {
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    background: url("../images/quote.png") no-repeat;
+    position: absolute;
+}
+
+.section1 .left .quote span:first-child {
+    left: 100px;
+    top: 0;
+}
+
+.section1 .left .quote span:last-child {
+    right: 100px;
+    bottom: -20px;
+    transform: rotate(180deg);
+}
+
+.section1 .right {
+    float:  right;
+    width: 50%;
+    position: relative;
+    padding-top: 100px;
+}
+
+.section1 .right .item-center {
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background: url("../images/item5.png") no-repeat;
+    z-index: 2;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -123px;
+    margin-top: -73px;
+    opacity: 0.9;
+    padding-top: 92px;
+}
+
+.section1 .right .item-center p {
+    font: 30px Alegreya;
+    color: #c9b176;
+    line-height: 36px;
+}
+
+.section1 .right .item {
+    width: 295px;
+    height: 250px;
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+
+.section1 .right .item .border {
+    display: block;
+    box-sizing: border-box;
+    width: 282px;
+    height: 238px;
+    border: 5px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -119px;
+    margin-left: -141px;
+}
+
+/*section2*/
+.section2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 760px;
+    background: url("../images/sectionBG2.png") no-repeat center /cover;
+    padding-top: 140px;
+    position: relative;
+}
+
+.section2 .item1 {
+    width: 966px;
+    height: 512px;
+    margin-left: 96px;
+    background: url("../images/section2_manner.png") no-repeat -600%;
+    /*background: linear-gradient(45deg, transparent 50px , #ffffff 0);*/
+}
+
+.section2 .item1 .description {
+    box-sizing: border-box;
+    width: 546px;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    padding: 80px 60px 0 60px;
+}
+
+.section2 .item1 .description .title {
+    font: 48px "Alegreya";
+    color: #56534c;
+
+}
+
+.section2 .item1 .description .small {
+    font: 14px Alegreya;
+    color: #a47d5e;
+    padding-bottom: 60px;
+
+}
+
+.section2 .item1 .description .text {
+    font: 14px "Proxima Nova";
+    color: #56534c;
+    line-height: 24px;
+    padding-right: 50px;
+}
+
+.section2 .item1 .description div {
+    margin-top: 100px;
+    height: 120px;
+    line-height: 120px;
+}
+
+.section2 .item1 .description div a {
+    float: left;
+    width: 90px;
+    height: 100%;
+}
+
+.section2 .item1 .description div #leftBtn,#rightBtn{
+    width: 32px;
+}
+
+.section2 .item1 .description div img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+
+.section2 .item1 .description div #leftBtn img,#rightBtn img {
+    width: 32px;
+    height: 32px;
+}
+
+.section2 .item1 .description div .food {
+    padding: 0 15px;
+}
+
+.section2 .item2 {
+    width: 200px;
+    height: 200px;
+    box-shadow: -20px 2px 50px #d8d8d8;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 420px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section2 .item2 p {
+    font-weight: bold;
+    font-family: Alegreya;
+}
+
+.section2 .item2 p:first-child {
+    font-size: 18px;
+    color: #a47d5e;
+    text-transform: uppercase;
+    padding: 30px 0 40px 0;
+}
+
+.section2 .item2 p:nth-child(2) {
+    font-size: 92px;
+    color: #dfc691;
+}
+
+.section2 .item2 p:nth-child(3) {
+    font-size: 18px;
+    color: #979285;
+}
+
+.section2 .starts {
+    position: absolute;
+
+}
+
+/*section3*/
+.section3 {
+    width: 100%;
+    height: 760px;
+    background: url("../images/sectionBG3.png") no-repeat center /cover;
+}
+
+.section3 .left {
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-top: 90px;
+    width: 50%;
+    float: left;
+}
+
+.section3 .left div {
+    text-align: center;
+    color: #ffffff;
+}
+
+.section3 .left .section3-header {
+    height: 130px;
+}
+
+.section3 .left .section3-header p:first-child {
+    font: 60px Alegreya;
+    line-height: 1em;
+}
+
+.section3 .left .section3-header p:last-child {
+    font: 18px Alegreya;
+    color: #c8a593;
+}
+
+.section3 .left .text-item {
+    height: 160px;
+}
+
+.section3 .left .text-item p:first-child {
+    font: 30px Alegreya;
+}
+
+.section3 .left .text-item p:nth-child(2) {
+    font: 16px "Proxima Nova";
+    color: #c2beba;
+}
+
+.section3 .left .text-item p:last-child {
+    font: 36px Alegreya;
+    color: #dfc691;
+    line-height: 2.6em;
+}
+
+.section3 .right {
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding-top: 90px;
+    padding-left: 190px;
+}
+
+.section3 .right .paper {
+    width: 440px;
+    height: 600px;
+    background-color: #f3f1e9;
+    background: linear-gradient(45deg, transparent 20px, #f3f1e9 0);
+    position: relative;
+}
+
+.section3 .right .paper:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #ffffff #ffffff transparent transparent;
+}
+
+.section3 .right .paper .border {
+    width: 95%;
+    height: 95%;
+    border: 1px dashed #9e9c9c;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    box-sizing: border-box;
+    padding-top: 40px;
+    text-align: center;
+    color: #56534c;
+}
+
+.section3 .right .paper .border .date div {
+    font: 14px Alegreya;
+    color: #56534c;
+}
+
+.section3 .right .paper .border .date .left-date {
+    float: left;
+    padding-left: 94px;
+}
+
+.section3 .right .paper .border .date .right-date {
+    float: right;
+    padding-right: 94px;
+}
+
+.section3 .right .paper .border .list-icon {
+    width: 367px;
+    margin: 0 auto;
+    margin-top: 14px;
+    padding-bottom: 50px;
+}
+
+.section3 .right .paper .border .description .title {
+    font: 44px Alegreya;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.section3 .right .paper .border .description .text {
+    font: 14px "Proxima Nova";
+    padding: 40px 46px 0 46px;
+    line-height: 2em;
+}
+
+.section3 .right .paper .border .description button {
+    width: 190px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #9e9c9c;
+    font: 18px Alegreya;
+    color: #a47d5e;
+    margin-top: 54px;
+}
+
+/*section4*/
+.section4 {
+    height: 1160px;
+    width: 100%;
+    background-color: #f3f1e9;
+    position: relative;
+    z-index: 0;
+}
+
+.section4 .pageTitle {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.section4 .pageTitle p:first-child {
+    font: 48px Alegreya;
+    color: #56534c;
+}
+
+.section4 .pageTitle p:last-child {
+    font: 14px Alegreya;
+    color: #a47d5e;
+    text-transform: uppercase;
+}
+
+.section4 .left {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 130px;
+}
+
+.section4 .left .item {
+    height: 210px;
+    float: left;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section4 .left .item .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    display: inline-block;
+}
+
+.section4 .left .item:nth-child(1) .icon {
+    background: url("../images/circle1.png") no-repeat 80% 90%;
+}
+
+.section4 .left .item:nth-child(2) .icon {
+    background: url("../images/circle2.png") no-repeat 20% 50%;
+}
+
+.section4 .left .item:nth-child(3) .icon {
+    background: url("../images/circle3.png") no-repeat 80% 50%;
+}
+
+.section4 .left .item .title {
+    font: 30px Alegreya;
+    color: #a47d5e;
+    font-weight: bold;
+    line-height: 2.4em;
+}
+
+.section4 .left .item .text {
+    font: 14px "Proxima Nova";
+    color: #56534c;
+    line-height: 1.4em;
+}
+
+.section4 .right {
+    width: 66.66%;
+    float: right;
+}
+
+.section4 .right .content {
+    position: relative;
+    width: 840px;
+    height: 556px;
+    box-sizing: border-box;
+    border: 10px solid #ffffff;
+    margin-top: 90px;
+    background: url("../images/sandwitch.png") no-repeat center /cover;
+}
+
+.section4 .right .content button {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 170px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px dashed #dfc691;
+    font: 18px Alegreya;
+    color: #dfc691;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -22px;
+    margin-bottom: -18px;
+}
+
+.section4 .right .content .times {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: -33px;
+}
+
+.section4 .right .content .times .cookItem {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    font-family: Alegreya;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-top: 48px;
+}
+
+.section4 .right .content .times .cookItem:last-child {
+    background-color: #ffffff;
+}
+
+.section4 .right .content .times .cookItem p:first-child {
+    font-size: 18px;
+    color: #a47d5e;
+}
+.section4 .right .content .times .cookItem p:nth-child(2){
+    font-size: 60px;
+    color: #56534c;
+}
+
+.section4 .right .content .times .cookItem p:last-child {
+    font-size: 18px;
+    color: #979285;
+}
+
+
+.section4 .right .content .times .cookItem:first-child {
+    margin-bottom: 1px;
+}
+
+/*footer*/
+.footer {
+    width: 1260px;
+    position: absolute;
+    bottom: 70px;
+}
+
+.footer .links {
+    width: 516px;
+    height: 70px;
+    box-sizing: border-box;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #bfbbb7;
+    font: 14px Alegreya;
+    line-height: 70px;
+    text-transform: uppercase;
+    padding: 0 38px;
+    letter-spacing: 0.2em;
+}
+
+.footer .links span {
+    padding: 0 36px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #56534c;
+}
+
+.footer .footerLeft {
+    float: left;
+}
+
+.footer .center {
+    float: left;
+    width: 228px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font: 30px Scriptina;
+    color: #56534c;
+}
+
+.footer .footerRight {
+    float: right;
+}
