@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.clearFix:before,.clearFix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: bold;
+    padding: 0 0 70px 0;
+}
+
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ffffff;
+    position: relative;
+    padding: 70px 0;
+}
+
+.header {
+    background-color: #151515;
+    padding-top: 50px;
+}
+
+.header .pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url("../images/head.png") no-repeat center /cover;
+    margin: 0 auto;
+}
+
+.header .contact {
+    width: 250px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 30px;
+    font-size: 1.2em;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.header .contact div {
+    position: relative;
+    z-index: 2;
+}
+
+.header .contact::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 40px 20px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent #ffffff;
+    transform: rotate(50deg);
+    left: -20px;
+    z-index: 1;
+}
+
+.header .about {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 20px 400px;
+}
+
+.header .about p {
+    padding: 5px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.skills {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.skills .title {
+    color: #000000;
+}
+
+.skills .left {
+    float: left;
+    width: 50%;
+}
+
+.skills .left > div, .skills .right > div {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.skills .right {
+    float: right;
+    width: 50%;
+}
+
+.skills p {
+    color: #000000;
+    font-size: 1.4em;
+}
+
+.skills .progress {
+    width: 80%;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #767676;
+}
+
+.skills .progress .value {
+    float: left;
+    background-color: #4aa7ff;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#html .value {
+    width: 95%;
+}
+
+#css .value {
+    width: 92%;
+}
+
+#JavaScript .value {
+    width: 80%;
+}
+
+#Bootstrap .value {
+    width: 70%;
+}
+
+#jQuery .value {
+    width: 75%;
+}
+
+#PhotoShop .value {
+    width: 80%;
+}
+
+#Cplus .value {
+    width: 70%;
+}
+
+#Unity3D .value {
+    width: 85%;
+}
+
+.works {
+    background-color: coral;
+}
+
+.works div {
+    color: #ffffff;
+}
+
+.works .work {
+    box-sizing: border-box;
+    border-left: 3px solid #53ff79;
+    margin: 20px 0;
+}
+
+.works .work p:first-child {
+    font-size: 1.5em;
+    padding: 0 20px 0 10px;
+}
+
+.works .work p:last-child {
+    color: #f0f0f0;
+    padding: 10px 0 0 10px;
+}
+
+.project {
+    background-color: #53ff79;
+}
+
+.project .items {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.project .item {
+    display: block;
+    box-sizing: border-box;
+    width: 30%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    color: #f3f3f3;
+}
+
+.project .item .info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    padding: 0 10px;
+    top: 140px;
+    transition: all 0.3s;
+}
+
+.project .item .info p:first-child {
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 2.5em;
+}
+
+.project .item .info p:last-child {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding-left: 20px;
+}
+
+.project .item:hover .info {
+    top: 0;
+    transition: all 0.3s;
+}
+
+.aboutMe {
+    background: #000000;
+}
+
+.aboutMe p {
+    color: #333333;
+    font-size: 1.4em;
+    line-height: 1.3em;
+}
+
+.aboutMe .box {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px #000;
+}
+
+.aboutMe .box p:first-child {
+    color: #000000;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-left: 2px solid #804440;
+}

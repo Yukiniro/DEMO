@@ -1,0 +1,35 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.box {
+    padding: 15px 0 0 0;
+    float: left;
+}
+.pic {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.pic img {
+    width: 165px;
+    height: auto;
+}
+
+#main {
+    column-count: 7;
+    -moz-column-count: 7;
+    -webkit-column-count: 7;
+    column-gap: 10px;
+}
