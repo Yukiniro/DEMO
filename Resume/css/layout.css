@@ -130,34 +130,42 @@
 
 #html .value {
     width: 95%;
+    animation: htmlPro 2s;
 }
 
 #css .value {
     width: 92%;
+    animation: cssPro 2s;
 }
 
 #JavaScript .value {
     width: 80%;
+    animation: jsPro 2s;
 }
 
 #Bootstrap .value {
     width: 70%;
+    animation: bsPro 2s;
 }
 
 #jQuery .value {
     width: 75%;
+    animation: jqPro 2s;
 }
 
 #PhotoShop .value {
     width: 80%;
+    animation: psPro 2s;
 }
 
 #Cplus .value {
     width: 70%;
+    animation: cpPro 2s;
 }
 
 #Unity3D .value {
     width: 85%;
+    animation: U3DPro 2s;
 }
 
 .works {
@@ -262,4 +270,44 @@
     padding-left: 10px;
     margin-bottom: 10px;
     border-left: 2px solid #804440;
+}
+
+@keyframes htmlPro {
+    from {width: 0}
+    to {width: 95%}
+}
+
+@keyframes cssPro {
+    from {width: 0}
+    to {width: 92%}
+}
+
+@keyframes jsPro {
+    from {width: 0}
+    to {width: 80%}
+}
+
+@keyframes bsPro {
+    from {width: 0}
+    to {width: 70%}
+}
+
+@keyframes jqPro {
+    from {width: 0}
+    to {width: 75%}
+}
+
+@keyframes psPro {
+    from {width: 0}
+    to {width: 80%}
+}
+
+@keyframes cpPro {
+    from {width: 0}
+    to {width: 70%}
+}
+
+@keyframes U3DPro {
+    from {width: 0}
+    to {width: 85%}
 }
