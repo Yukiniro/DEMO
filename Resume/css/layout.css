@@ -9,6 +9,14 @@
     clear: both;
 }
 
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
 .title {
     text-align: center;
     font-size: 2.0em;
@@ -22,6 +30,7 @@
     color: #ffffff;
     position: relative;
     padding: 70px 0;
+    width: 80%;
 }
 
 .header {
@@ -254,7 +263,6 @@
 }
 
 .aboutMe .box {
-    width: 100%;
     background-color: #ffffff;
     margin: 20px 0;
     padding: 20px;
@@ -270,6 +278,13 @@
     padding-left: 10px;
     margin-bottom: 10px;
     border-left: 2px solid #804440;
+}
+
+.time {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
 }
 
 @keyframes htmlPro {
@@ -310,4 +325,53 @@
 @keyframes U3DPro {
     from {width: 0}
     to {width: 85%}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .header .about {
+        margin:  0 auto;
+        padding: 20px 0 20px 250px;
+    }
+
+    .skills .left, .skills .right {
+        display: block;
+        clear: both;
+        width: 100%;
+    }
+
+    .skills p {
+        text-align: center;
+    }
+
+    .skills .progress {
+        margin: 0 auto;
+    }
+
+    .skills .left > div:nth-child(even),
+    .skills .right > div:nth-child(even) {
+        background-color: rgba(165, 75, 45, 0.3);
+    }
+
+    .skills .left > div:nth-child(odd),
+    .skills .right > div:nth-child(odd) {
+        background-color: rgba(118, 118, 118, 0.3);
+    }
+
+    .skills .left > div, .skills .right > div {
+        margin: 10px 0;
+        box-shadow: inset 0 0 10px #cc8681;
+    }
+
+    .project .item {
+        width: 100%;
+        height: 300px;
+    }
+
+    .project .item img {
+        width: 100%;
+        height: auto;
+    }
 }
