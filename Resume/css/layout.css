@@ -333,7 +333,8 @@ body {
 
     .header .about {
         margin:  0 auto;
-        padding: 20px 0 20px 250px;
+        text-align: center;
+        padding: 20px 0;
     }
 
     .skills .left, .skills .right {
