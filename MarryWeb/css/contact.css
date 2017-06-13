@@ -1,0 +1,85 @@
+.contact {
+	width: 100%;
+	padding: 40px 30px;
+}
+
+.contact .title {
+	color: #000;
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.contact {
+	color: #999;
+	font-size: 0.8em;
+	line-height: 2.0em;
+}
+
+.contact .texts .contact-ways {
+	padding-top: 30px;
+}
+
+.contact .texts .contact-ways a {
+	color: #999;
+}
+
+.contact .texts .contact-ways a:hover {
+	color: #F44336;
+}
+
+.contact .contact-ways div {
+	margin: 20px 0;
+}
+
+.contact .contact-ways i {
+	color: #fff;
+	font-size: 1.6em;
+	display: inline-block;
+	background-color: #F44336;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.contact .forms input {
+	width: 100%;
+	height: 40px;
+	border: 2px solid #dedede;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+
+.contact .forms textarea {
+	width: 100%;
+	height: 120px;
+	color: #999;
+	padding: 10px;
+	border: 2px solid #dedede;
+}
+
+.contact .forms input:last-child {
+	width: 90px;
+	height: 30px;
+	background-color: #F44336;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	border: none;
+}
+
+@media (min-width: 992px) {
+
+	.contact .texts {
+		width: 49%;
+		float: left;
+	}
+
+	.contact .forms {
+		width: 49%;
+		float: right;
+	}
+}

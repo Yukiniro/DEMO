@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.clearFix::before,
+.clearFix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #000;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#menu .active a {
+    color: #F44336;
+}
+
+.nav .nav-list {
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    display: none;
+}
+
+.nav #nav-btn {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav #nav-btn span {
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.title {
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border: 0 solid #F44336;
+}
+
+.section {
+    padding: 90px 20px 0 20px;
+    text-align: center;
+    background-color: #dedede;
+}
+
+.aboutMe .head {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.aboutMe .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aboutMe .info div {
+    background-color: #b3b3b3;
+    margin: 5px 0;
+    width: 45%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.aboutMe .info div p {
+    display: inline-block;
+    font-size: 1.2em;
+    height: 30px;
+    line-height: 30px;
+}
+
+.aboutMe .info div p:first-child {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+.aboutMe .info div:last-child p:first-child {
+    display: none;
+}
+
+.aboutMe .description {
+    text-align: left;
+    text-indent: 2.0em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+.skills .progress {
+    width: 90%;
+    height: 40px;
+    background-color: #ffffff;
+    margin: 14px auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skills .progress p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #969696;
+    line-height: 20px;
+    height: 20px;
+}
+
+.skills .progress .value {
+    width: 0;
+    height: 100%;
+    background-color: dodgerblue;
+    float: left;
+}
+
+.project .project-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project .project-con .item {
+    width: 45%;
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.project .project-con .item:hover {
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.project .item .info {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 0.6em;
+    top: 60px;
+    line-height: 1.9em;
+    transition: 0.2s;
+}
+
+.project .item .info p:first-child {
+    padding: 6px 0;
+}
+
+.project .item:hover .info {
+    top: 0;
+    transition: 0.2s;
+}
+
+.contact p:not(:first-child) {
+    color: #333;
+    padding-top: 30px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+
+/*为动画重置样式*/
+.aboutMe .head {
+    opacity: 0;
+}
+
+.aboutMe .info,
+.aboutMe .description,
+.skills .skill-con,
+.contact .c {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3.0em;
+        padding: 20px 0;
+    }
+
+    .aboutMe .info div {
+        height: 60px;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+
+    .aboutMe .info div:last-child p:first-child {
+        display: inline-block;
+    }
+
+    .aboutMe .description {
+        padding-top: 30px;
+        font-size: 1.8em;
+        line-height: 1.6em;
+    }
+
+    .skills .progress {
+        height: 70px;
+        margin-top: 40px;
+        border-radius: 40px;
+    }
+
+    .skills .progress p {
+        height: 35px;
+        line-height: 35px;
+        font-size: 1.2em;
+    }
+
+    .project .item {
+        height: 200px !important;
+        margin-top: 50px;
+    }
+
+    .project .item p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .project .item .info {
+        top: 120px;
+    }
+
+    .project .item .info p:first-child {
+        padding: 20px 0;
+    }
+
+    .contact .title {
+        margin-bottom: 100px;
+    }
+
+    .contact p:not(:first-child) {
+        color: #333;
+        padding-top: 60px;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1220px) {
+    .nav, .section {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    #nav-btn {
+        display: none;
+    }
+
+    .nav .myLogo {
+        float: left;
+    }
+
+    .nav .nav-list {
+        display: block;
+        float: right;
+        line-height: 80px;
+    }
+
+    .nav .nav-list li {
+        float: left;
+        margin-left: 30px;
+    }
+
+    .aboutMe .head {
+        width: 20%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .aboutMe .info {
+        width: 100%;
+        background-color: #0d3c69;
+        margin: 30px 0;
+        overflow: hidden;
+    }
+
+    .aboutMe .info div {
+        width: 25%;
+        float: left;
+        background-color: transparent;
+    }
+
+    .aboutMe .description {
+        font-size: 1.6em;
+    }
+
+    .skills .skill-con {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 80px;
+    }
+
+    .skills .progress {
+        width: 45%;
+    }
+
+    .project .project-con {
+        margin-top: 50px;
+    }
+
+    .project .item {
+        width: 30% !important;
+    }
+}

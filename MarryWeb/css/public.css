@@ -1,0 +1,304 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.clearFix::before,
+.clearFix::after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.banner .other-title {
+	text-align: center;
+	color: #fff;
+	padding: 30px 0;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.banner {
+	width: 100%;
+	padding-top: 15px;
+	background: url('../images/1.jpg') center /cover no-repeat; 
+}
+
+.banner .header {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-bottom: 20px;
+}
+
+.banner .header .logo {
+	color: #fff;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px 0 10px 0;
+}
+
+.banner .header .logo span {
+	font-weight: 100;
+}
+
+.banner .header .nav-list {
+	display: none;
+}
+
+.banner .header #nav-btn {
+	width: 50px;
+	height: 40px;
+	border: 1px solid #fff;
+	background-color: transparent;
+	border-radius: 4px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.banner .header .nav-list {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.banner .nav-list ul {
+	text-align: center;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #676767;
+}
+
+.banner .nav-list ul li {
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.banner .nav-list ul li a:hover {
+	color: #F44336;
+}
+
+#nav-btn span {
+	width: 50%;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin: 8px auto;
+}
+
+.footer {
+	width: 100%;
+	background-color: #333;
+}
+
+.footer .contact {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 0.8em;
+	padding: 10px 0;
+	border-bottom: 1px solid #676767;
+}
+
+#telphone, #mail{
+	display: inline-block;
+	margin: 6px 0;
+}
+
+#mail span {
+	color: #F44336;
+}
+
+.footer .item {
+	padding: 30px 30px 0;
+}
+
+.footer .item .title {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.footer .about-us img {
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+}
+
+.footer .item .text {
+	color: #999;
+	font-size: 0.9em;
+	line-height: 1.8em;
+}
+
+.footer .newsletter input {
+	width: 100%;
+	height: 30px;
+	border-style: none;
+	margin: 20px 0;
+}
+
+.footer .newsletter button {
+	width: 30%;
+	height: 30px;
+	background-color: #F44336;
+	border-style: none;
+	color: #fff;
+}
+
+.footer .social a {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 10px;
+	border: 2px solid #fff;
+	text-align: center;
+	line-height: 30px;
+}
+
+#copyright {
+	width: 100%;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	border-top: 1px solid #676767;
+	margin-top: 20px;
+	font-size: 0.6rem;
+}
+
+#toTop {
+	display: inline-block;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url('../images/arrow.png') center /cover no-repeat;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	font-size: 0;
+}
+
+@media (min-width: 544px) {
+	.banner .header {
+		padding: 0 20px;
+	}
+
+	.banner .header .logo {
+		float: left;
+	}
+
+	.banner .header #nav-btn {
+		float: right;
+		margin-top: 10px;
+	}
+
+	.banner .header .nav-list {
+		float: right;
+		width: 62% !important;
+		margin-bottom: 10px !important;
+	}
+
+	.footer .contact br {
+		display: none;
+	}
+
+	.footer .contact #telphone {
+		float: left;
+		padding-left: 30px;
+	}
+
+	.footer .contact #mail {
+		float: right;
+		padding-right: 30px;
+	}
+
+	.footer .about-us img {
+		width: 30%;
+		height: auto;
+		float: left;
+		margin-right: 14px;
+	}
+
+	.footer .about-us .text {
+		font-size: 0.7em;
+		padding-top: 6px;
+	}
+
+	.footer .item .title {
+		font-size: 1.0em;
+		font-weight: 600;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.banner .header #nav-list {
+		width: auto !important;
+		display: block !important;
+	}
+
+	.banner .header .nav-list {
+		display: block;
+	}
+
+	.banner .header .logo {
+		font-size: 1.8rem;
+	}
+
+	.banner .header #nav-btn {
+		display: none;
+	}
+
+	.banner .header .nav-list {
+		padding-top: 20px;
+	}
+
+	.banner .header .nav-list ul {
+		float: right;
+		border: none;
+	}
+
+	.banner .header .nav-list ul li {
+		float: left;
+		margin-left: 30px;
+		font-size: 1.0em;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.footer .about-us {
+		width: 50%;
+		float: left;
+	}
+
+	.footer .newsletter {
+		width: 25%;
+		float: left;
+		padding-left: 0;
+	}
+
+	.footer .newsletter input {
+		height: 
+	}
+
+	.footer .social {
+		width: 25%;
+		float: left;
+	}
+}

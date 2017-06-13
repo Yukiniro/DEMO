@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <title>个人简历</title>
+    <script src="scripts/jquery-1.11.2.min.js"></script>
+    <script src="scripts/jquery.easing.min.js"></script>
+    <script src="scripts/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <!--导航栏开始-->
+    <div class="nav">
+        <div class="myLogo"><a href="#">个人简历</a></div>
+        <div class="nav-list">
+            <ul id="menu">
+                <li data-menuanchor="page1" class="active">
+                    <a href="#page1">关于我</a>
+                </li>
+                <li data-menuanchor="page2">
+                    <a href="#page2">专业技能</a>
+                </li>
+                <li data-menuanchor="page3">
+                    <a href="#page3">作品展示</a>
+                </li>
+                <li data-menuanchor="page4">
+                    <a href="#page4">联系方式</a>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--导航栏结束-->
+    <!--全屏滚动开始-->
+    <div id="myContainer">
+        <!--关于我--开始-->
+        <div class="aboutMe section" data-anchor = "page1">
+            <div>
+                <p class="title">关于我</p>
+            </div>
+            <img class="head" src="images/head.png">
+            <div class="info">
+                <div>
+                    <p>姓名</p>
+                    <p>张豪</p>
+                </div>
+                <div>
+                    <p>学历</p>
+                    <p>本科</p>
+                </div>
+                <div>
+                    <p>年龄</p>
+                    <p>2 2</p>
+                </div>
+                <div>
+                    <p>状态</p>
+                    <p>应届毕业生</p>
+                </div>
+            </div>
+            <p class="description">
+                我将于今年毕业于四川师范大学（数字媒体技术专业），在校期间学习前端开发的时候对其产生了浓厚的兴趣，课余时间喜欢学习和探索新的技术，平时也会制作一些小项目并存放在GitHub上以此来熟悉和强化自己的专业技能。目前正在寻找网页前端开发方向的工作。
+            </p>
+        </div>
+        <!--关于我--结束-->
+        <!--专业技能--开始-->
+        <div class="skills section" data-anchor = "page2">
+            <p class="title">专业技能</p>
+            <div class="skill-con">
+                <div class="progress">
+                    <p>html</p>
+                    <div id="html" class="value"></div>
+                </div>
+                <div class="progress">
+                    <p>css</p>
+                    <div id="css" class="value"></div>
+                </div>
+                <div class="progress">
+                    <p>javascript</p>
+                    <div id="javascript" class="value"></div>
+                </div>
+                <div class="progress">
+                    <p>jQuery</p>
+                    <div id="jQuery" class="value"></div>
+                </div>
+                <div class="progress">
+                    <p>Bootstrap</p>
+                    <div id="Bootstrap" class="value"></div>
+                </div>
+                <div class="progress">
+                    <p>PhotoShop</p>
+                    <div id="PhotoShop" class="value"></div>
+                </div>
+            </div>
+        </div>
+        <!--专业技能--结束-->
+        <!--作品展示--开始-->
+        <div class="project section" data-anchor = "page3">
+            <p class="title">作品展示</p>
+            <div class="project-con">
+                <div class="item">
+                    <a href="#">
+                        <img src="images/1.jpg">
+                        <div class="info">
+                            <p>婚礼网站</p>
+                            <p>采用响应式设计，适合各种分辨率的设备，多页面跳转，友好的交互设计</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="images/calculator.png">
+                        <div class="info">
+                            <p>计算器</p>
+                            <p>采用html、css、javascript实现的简单计算器</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="images/clickbox.png">
+                        <div class="info">
+                            <p>方块小应用</p>
+                            <p>点击小方块会生成4个随机颜色的消方块，然后可以接着点击下去。</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="images/09.jpg">
+                        <div class="info">
+                            <p>鼠标滑过插件</p>
+                            <p>鼠标滑过时元素上的遮罩会随着鼠标的方向移动。</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="images/P2.png">
+                        <div class="info">
+                            <p>轮播</p>
+                            <p>原生JS实现的轮播界面</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="images/p1.png">
+                        <div class="info">
+                            <p>瀑布流</p>
+                            <p>使用原生JS的瀑布流布局。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--作品展示--结束-->
+        <!--联系方式--开始-->
+        <div class="contact section" data-anchor = "page4">
+            <p class="title">联系方式</p>
+            <p class="c">电话：18282454699</p>
+            <p class="c"> Q Q：2537565660</p>
+            <p class="c">邮箱：2537565660@qq.com</p>
+        </div>
+        <!--联系方式--结束-->
+    </div>
+    <!--全屏滚动结束-->
+    <script src="scripts/resume.js"></script>
+</body>
+</html>
